@@ -1,0 +1,218 @@
+<!doctype html>
+<title>Naman Verma</title>
+<head> <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+	   <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+</head>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  .link{ 
+	  text-decoration: none;
+	  background-color:lightblue;
+  }
+  a:hover{
+	  background:#D7E8D4;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+    font-family: 'Alef';
+    
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+    font-family:'Actor';
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 60vh;
+  }
+  header {
+    background: lightgreen;
+    height: 30vh;
+  }  
+  footer {
+    
+    height: 20vh;  
+    font-family: 'Alef';
+  }
+   footer, article, nav {
+    padding: 0.5em;
+    
+  }
+  th,td{border:2px solid black;border-collapse:collapse;padding:10px;}
+  
+  .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  border-radius:5px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button4 {
+  background-color:skyblue ;
+  color: black;
+  border: 2px solid #555555;
+}
+.button4:hover {
+  background-color: white;
+  color: black;}
+.button5 {
+  background-color: crimson;
+  color: black;
+  border: 2px solid #555555;
+}
+.button5:hover {
+  background-color: #555555;
+  color: white;}
+</style>
+<body>
+  <nav class="col-1"> <img src="iit.png" height=185px width=185px style="padding-left:10px;" >
+		<br><br><br><br><h3> Navigation links</h3> 
+		<ul>
+		<li><a class="link" href = "http://www.iitb.ac.in/">IITB Website </a> </br><br></li>	
+		<li><a class="link" href = "https://cse.iitb.ac.in">CSE website </a> </br><br></li>
+        <li><a class="link" href = "https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiki Dictionary </a> </br><br></li>
+        <li><a class="link" href = "index.html">This page </a></li>
+        </ul>
+   </nav>
+  <div class="col-2">
+  	<header>
+			
+			<img src="img.jpg" align="right" style="margin-right:100px;height:30vh;width:145px;" >
+			<h2 style="padding-left:30px;"> Naman Verma <br> M Tech CSE IIT Bombay</h2>
+			<h3 style="padding-left:30px;"> Roll no.- 193050082</h3>
+			<h3 style="padding-left:30px;"> Email- 193050082@iitb.ac.in</h3> 
+  	</header>
+    <main class="content">
+    <article>
+		<p> Hi <br>
+		Welcome to my IITB web page,</p>
+		<p> It feels pretty good knowing that i am now a part of the most prestigious technology institution of the country. <br>
+            Anyway, without bragging about it too much lets have a look around. <br>
+         <i>After you :)</i></p>
+         <h3 style="background-color:lightgreen;padding:10px;padding-left:25px;">
+         Hobbies</h3>
+         <p style="padding-left:40px;">1. Love video games, with <b>FIFA</b> right there on top.</p>
+         <p style="padding-left:40px;">2. Very much into playing <b>cricket</b>.</p>
+         <p style="padding-left:40px;">3. <b>Binge-watching</b> is my favourite time pass.</p>
+         
+         <h3 style="background-color:lightgreen;padding:10px;padding-left:25px;">
+         My courses this semester</h3>
+         <table id="mydiv" style="margin-left:300px;border:2px solid black;border-collapse:collapse;text-align:center;">
+            <tr>
+                <th>S no. </th>
+                <th>Course code</th>
+                <th>Course name</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td> CS 699</td>
+                <td>Software Lab</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CS 601</td>
+                <td>ALgorithms and complexity</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>CS 725</td>
+                <td>Foundations of machine learning </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>CS 740</td>
+                <td>Maths for visual computing</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>CS 618</td>
+                <td>Program analysis</td>
+            </tr>      
+        </table>
+        <h3 style="background-color:lightgreen;padding:10px;padding-left:25px;">
+         Fun time</h3>
+        <p> Click the <strong>Fun button</strong> to have some fun </p> 
+        <button class="button button5"onclick="myfun()">Fun Button</button> 
+         <a  href = "index.html" style="margin-left:400px;"> <button class="button button4">Stop this madness</button> </a> <br><br>
+    </article>
+    </main>
+  	<footer> 
+		<h3 style="background-color:lightgreen;padding:10px;padding-left:25px;"> Citations </h3>
+		<p style="bakground-color:white;"> W3 schools tutorial <br> Quackit</p <br>
+  	</footer>
+  </div>
+  <script> 
+	  
+	  function myfun() { 
+							
+							document.getElementById("mydiv").style.transform = "rotate(30deg)";
+							setInterval(myfun1,600);
+						}	
+		function myfun1() { 
+							document.getElementById("mydiv").style.transform = "rotate(60deg)";
+							setInterval(myfun2,600);
+						  }
+		function myfun2() { 
+							document.getElementById("mydiv").style.transform = "rotate(90deg)";
+							setInterval(myfun3,600);
+						  }
+		function myfun3() { 
+							document.getElementById("mydiv").style.transform = "rotate(120deg)";
+							setInterval(myfun4,600);
+						  }		
+		function myfun4() { 
+							document.getElementById("mydiv").style.transform = "rotate(150deg)";
+							setInterval(myfun5,600);
+						  }		
+		function myfun5() { 
+							document.getElementById("mydiv").style.transform = "rotate(180deg)";
+							setInterval(myfun6,600);
+						  }		
+		function myfun6() { 
+							document.getElementById("mydiv").style.transform = "rotate(210deg)";
+							setInterval(myfun7,600);
+						  }		
+		function myfun7() { 
+							document.getElementById("mydiv").style.transform = "rotate(240deg)";
+							setInterval(myfun8,600);
+						  }						  				  				  				  		  				  
+		function myfun8() { 
+							document.getElementById("mydiv").style.transform = "rotate(270deg)";
+							setInterval(myfun9,600);
+						  }							  				  		  					
+		function myfun9() { 
+							document.getElementById("mydiv").style.transform = "rotate(300deg)";
+							setInterval(myfun10,600);
+						  }		
+		function myfun10() { 
+							document.getElementById("mydiv").style.transform = "rotate(330deg)";
+							setInterval(myfun11,600);
+						  }		
+		function myfun11() { 
+							document.getElementById("mydiv").style.transform = "rotate(360deg)";		
+						  }						  				  				
+	  </script>
+</body>
